@@ -1,36 +1,24 @@
-# KiwiIRC -  Nickserv Plugin
+# kiwiirc-nickserv-plugin-v2-en
+Nickserv plugin for Kiwiirc web client<br>
+This plugin is a fork from those two repositories<br>
+- https://github.com/SimosNap/kiwiirc-plugin-nickserv
+- https://github.com/Shillos/kiwiirc-plugin-nickserv<br>
 
-This is a NickServ plugin for KiwiIRC.
-It includes a full registration form with
-confimation form and login form.
+Preview is available [in ElKanaba](https://elkanaba.com/green)
+## Added the following:
+- Fixed Nickserv strings to match the default anope NickServ strings (2.0.9)
+- Login/Register/Logout buttons are in the left panel (aka StateBrowser)
+- Added CSS classes for Login/Register/Logout. Changing those buttons CSS attributes can be done in kiwiirc `theme.css` or `base.css`
+  - `.kiwi-statebrowser-login`
+  - `.kiwi-statebrowser-register`
+  - `.kiwi-statebrowser-logout`
+- Clicking any of plugin buttons will close StateBrowser automatically (on mobile devies)
 
-Dependencies
+## Credits
+- All contributors behind @kiwiirc [kiwiirc project](https://github.com/kiwiirc/kiwiirc). Specially @ItsOnlyBinary [ItsOnlyBinary](https://github.com/ItsOnlyBinary) and @prawnsalad [prawnsalad](https://github.com/prawnsalad) for their patience and dedication for helping others implementing their clients
+- Of course the original authors of this plugin [SimosNap](https://github.com/SimosNap) and [Shillos](https://github.com/Shillos) 
 
-node (https://nodejs.org/)
-yarn (https://yarnpkg.com/)
+You guys are bringing IRC to the masses.. Thank you!
 
-Building the source
+**Note:** kiwiirc support is now available at [LiberaChat](ircs://irc.libera.chat/kiwiirc)
 
-`yarn && yarn build`
-
-The plugin will then be built into dist/plugin-nickserv.js
-
-Just create a plugins folder in /static if you don't already have one
-then add this plugin into that directory.
-
-An easy way is to use also ln -s if you have the plugin in a different 
-folder and just link the file to your plugins folder, than just copying 
-and pasting. That way when you upgrade your plugin you will not need to
-copy again over into your plugins folder.
-
-example: 
-
-`cd /folder/of/kiwiirc/static/plugins/`
-
-`ln -s /path/of/plugin/dist/plugin-nickserv.js plugin-nickserv.js`
-
-Finally, edit your config.json file like so:
-
-    "plugins": [
-      {"name": "nickserv", "url": "./static/plugins/plugin-nickserv.js"}
-    ]
