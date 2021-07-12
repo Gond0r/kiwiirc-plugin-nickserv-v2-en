@@ -5,6 +5,7 @@ This plugin is a fork from those two repositories<br>
 - https://github.com/Shillos/kiwiirc-plugin-nickserv<br>
 
 Preview is available [in ElKanaba](https://elkanaba.com/green)
+Arabic translation is available [here](https://github.com/Gond0r/kiwiirc-nickserv-plugin-v2-ar)
 ## Added the following:
 - Fixed Nickserv strings to match the default anope NickServ strings (2.0.9)
 - Login/Register/Logout buttons are in the left panel (aka StateBrowser)
